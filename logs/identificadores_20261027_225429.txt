@@ -1,0 +1,64 @@
+Control Identifiers:
+
+Dialog - 'Métrica DIMENSOR ® { 8.0.0-2 } |  E-licença: xxx'    (L0, T0, R1200, B852)
+['Métrica DIMENSOR ® { 8.0.0-2 } |  E-licença: xxx', 'Dialog', 'Métrica DIMENSOR ® { 8.0.0-2 } |  E-licença: xxxDialog']
+child_window(title="Métrica DIMENSOR ® { 8.0.0-2 } |  E-licença: REV8T-6UU8X-8VRFF", control_type="Window")
+   | 
+   | Pane - ''    (L1192, T195, R1195, B844)
+   | ['Pane', 'Pane0', 'Pane1']
+   | child_window(auto_id="39194062", control_type="Pane")
+   | 
+   | Pane - ''    (L5, T844, R1195, B847)
+   | ['Pane2']
+   | child_window(auto_id="7933304", control_type="Pane")
+   | 
+   | Pane - ''    (L7, T176, R1193, B193)
+   | ['Pane3']
+   | child_window(auto_id="8194528", control_type="Pane")
+   | 
+   | Pane - ''    (L5, T35, R1195, B195)
+   | ['Pane4']
+   | child_window(auto_id="4853058", control_type="Pane")
+   |    | 
+   |    | TabControl - ''    (L14, T40, R1354, B176)
+   |    | ['TabControlInício', 'TabControl', 'TabControlSUPORTE']
+   |    | child_window(auto_id="3280256", control_type="Tab")
+   |    |    | 
+   |    |    | Pane - 'Início'    (L18, T69, R1350, B172)
+   |    |    | ['Pane5', 'Início', 'InícioPane', 'Início0', 'Início1']
+   |    |    | child_window(title="Início", auto_id="1115080", control_type="Pane")
+   |    |    | 
+   |    |    | TabItem - 'Início'    (L16, T42, R91, B65)
+   |    |    | ['TabItem', 'Início2', 'InícioTabItem', 'TabItem0', 'TabItem1']
+   |    |    | child_window(title="Início", control_type="TabItem")
+   |    |    | 
+   |    |    | TabItem - 'SUPORTE'    (L91, T42, R197, B65)
+   |    |    | ['SUPORTE', 'TabItem2', 'SUPORTETabItem']
+   |    |    | child_window(title="SUPORTE", control_type="TabItem")
+   |    | 
+   |    | ScrollBar - 'Horizontal'    (L7, T176, R1193, B193)
+   |    | ['HorizontalScrollBar', 'Horizontal', 'ScrollBar']
+   |    | child_window(title="Horizontal", auto_id="NonClientHorizontalScrollBar", control_type="ScrollBar")
+   |    |    | 
+   |    |    | Button - 'Uma coluna à esquerda'    (L7, T176, R24, B193)
+   |    |    | ['Uma coluna à esquerdaButton', 'Button', 'Uma coluna à esquerda', 'Button0', 'Button1']
+   |    |    | child_window(title="Uma coluna à esquerda", auto_id="UpButton", control_type="Button")
+   |    |    | 
+   |    |    | Thumb - 'Posição'    (L24, T176, R1036, B193)
+   |    |    | ['Thumb', 'PosiçãoThumb', 'Posição']
+   |    |    | child_window(title="Posição", auto_id="ScrollbarThumb", control_type="Thumb")
+   |    |    | 
+   |    |    | Button - 'Uma página à direita'    (L1036, T176, R1176, B193)
+   |    |    | ['Button2', 'Uma página à direitaButton', 'Uma página à direita']
+   |    |    | child_window(title="Uma página à direita", auto_id="DownPageButton", control_type="Button")
+   |    |    | 
+   |    |    | Button - 'Uma coluna à direita'    (L1176, T176, R1193, B193)
+   |    |    | ['Uma coluna à direitaButton', 'Button3', 'Uma coluna à direita']
+   |    |    | child_window(title="Uma coluna à direita", auto_id="DownButton", control_type="Button")
+   | 
+   | Pane - 'Espaço de trabalho'    (L5, T195, R1192, B844)
+   | ['Pane6', 'Espaço de trabalhoPane', 'Espaço de trabalho']
+   | child_window(title="Espaço de trabalho", control_type="Pane")
+   | 
+   | TitleBar - ''    (L8, T8, R1192, B31)
+   | ['TitleBar']
