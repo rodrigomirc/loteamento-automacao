@@ -4,15 +4,15 @@ import pandas as pd
 
 
 def criar_planilha_modelo(caminho="dados/loteamentos.xlsx"):
-    """
-    Cria uma planilha Excel modelo com as colunas necessárias.
-    """
+    '''
+    Cria uma planilha Excel modelo com as colunas necessarias.
+    '''
     os.makedirs(os.path.dirname(caminho), exist_ok=True)
 
     dados = [
         {
             "Nome": "Exemplo Loteamento",
-            "Descricao": "Descrição completa do imóvel/loteamento.",
+            "Descricao": "Descricao completa do imovel/loteamento.",
             "Endereco": "C:\\Loteamentos\\Exemplo",
         }
     ]

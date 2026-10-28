@@ -1,13 +1,21 @@
-import pyautogui
 import time
 
-print("Mova o mouse para cada botão/campo e anote as coordenadas.")
-print("Pressione Ctrl+C para parar.")
+import pyautogui
 
-try:
-    while True:
-        x, y = pyautogui.position()
-        print(f"x={x}, y={y}", end="\r")
-        time.sleep(0.1)
-except KeyboardInterrupt:
-    print("\nFinalizado.")
+
+def main():
+    print("Mova o mouse para o local desejado.")
+    print("Pressione Ctrl+C para parar.")
+    print()
+
+    try:
+        while True:
+            x, y = pyautogui.position()
+            print(f"Posicao do mouse: x={x}, y={y}", end="\r")
+            time.sleep(0.1)
+    except KeyboardInterrupt:
+        print("\n\nFinalizado.")
+
+
+if __name__ == "__main__":
+    main()

@@ -4,6 +4,6 @@ __pycache__/
 *.xlsx
 *.log
 
-# Arquivos temporários do Excel
+# Arquivos temporarios do Excel
 ~$*.xlsx
 ~$*.xls

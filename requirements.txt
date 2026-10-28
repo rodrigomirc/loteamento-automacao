@@ -3,3 +3,4 @@ openpyxl
 pywinauto
 pyautogui
 pyperclip
+pyyaml

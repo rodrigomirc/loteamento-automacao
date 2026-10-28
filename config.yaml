@@ -1,4 +1,4 @@
-# Configuração do sistema de automação de loteamento
+# Configuracao do sistema de automacao de loteamento
 # Ajuste as coordenadas de acordo com sua tela (1440x900)
 
 resolucao:
@@ -11,19 +11,18 @@ caminhos:
   pasta_logs: "logs"
 
 metrica_dimensor:
-  titulo_regex: ".*Métrica DIMENSOR.*"
+  titulo_regex: ".*Metrica DIMENSOR.*"
   maximizado: true
-  # Tempo de espera entre ações (segundos)
+  # Tempo de espera entre acoes (segundos)
   pausa_padrao: 1.0
   pausa_dialogo: 2.0
 
 coordenadas:
-  # ATENÇÃO: três coordenadas abaixo parecem inválidas
-  # Verifique com python posicao_mouse.py e corrija
-  novo: [38, 104]              # ajustar - informado y=82041
+  # ATENCAO: tres coordenadas abaixo precisam de verificacao
+  novo: [38, 104]              # ajustar se necessario
   avancar_1: [1011, 592]
   importar_documentos: [566, 515]
-  avancar_2: [866, 614]        # ajustar - informado y=5814
+  avancar_2: [866, 614]        # ajustar se necessario
   avancar_3: [1141, 611]
   memo_em_branco: [586, 238]
   botao_nao: [867, 522]
@@ -44,7 +43,7 @@ coordenadas:
   clicar_janela_print: [713, 387]
   notificacao_print: [1248, 605]
   campo_endereco_print: [855, 93]
-  salvar_print: [998, 655]      # ajustar - informado y=5355
+  salvar_print: [998, 655]      # ajustar se necessario
   fechar_captura_print: [1371, 15]
   cancelar: [639, 607]
   salvar_projeto: [331, 93]
@@ -58,4 +57,4 @@ atalhos:
   salvar: "ctrl+s"
   enter: "enter"
 
-pasta_calculos_fechamento: "\\\\192.168.1.1\\Rede Cartorio\\5 Registro\\Plotagem\\DIMENSOR - BEM TOPOGRAFIA\\REURB - CARMELITA ARRIEIRO\\Cálculos de Fechamento"
+pasta_calculos_fechamento: "\\\\192.168.1.1\\Rede Cartorio\\5 Registro\\Plotagem\\DIMENSOR - BEM TOPOGRAFIA\\REURB - CARMELITA ARRIEIRO\\Calculos de Fechamento"
