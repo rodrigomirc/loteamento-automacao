@@ -1,0 +1,12 @@
+Não localizei:
+QUADRA 04 - LOTE 18
+QUADRA 13 - LOTE 34
+
+Lote duplicado:
+QUADRA 13 - LOTE 17
+
+Lote quadruplicado:
+QUADRA 13 - LOTE 17A
+
+
+Da quadra 17 pulou para a 20
