@@ -60,7 +60,6 @@ class DimensorAutomator:
         self.clicar("avancar_3")
         self.duplo_clique("memo_em_branco")
         pausa(self.metrica["pausa_dialogo"])
-        self.clicar("botao_nao")
 
     def inserir_descricao(self, descricao):
         self.clicar("area_descricao")
@@ -72,6 +71,7 @@ class DimensorAutomator:
         self.clicar("ok_1")
         pausa(self.metrica["pausa_dialogo"])
         self.clicar("ok_2")
+        pausa(self.metrica.get("pausa_apos_ok2", 5.0))
 
     def exportar_google_earth(self):
         self.clicar("google")
@@ -79,3 +79,4 @@ class DimensorAutomator:
         self.clicar("sim_1")
         pausa(self.metrica["pausa_dialogo"])
         self.clicar("ok_3")
+        pausa(self.metrica["pausa_dialogo"])

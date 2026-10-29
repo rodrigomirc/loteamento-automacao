@@ -1,6 +1,6 @@
 import time
-
-import pyautogui
+import ctypes
+from ctypes import wintypes
 
 
 def main():
@@ -8,10 +8,12 @@ def main():
     print("Pressione Ctrl+C para parar.")
     print()
 
+    point = wintypes.POINT()
+
     try:
         while True:
-            x, y = pyautogui.position()
-            print(f"Posicao do mouse: x={x}, y={y}", end="\r")
+            ctypes.windll.user32.GetCursorPos(ctypes.byref(point))
+            print(f"Posicao real do mouse: x={point.x}, y={point.y}", end="\r")
             time.sleep(0.1)
     except KeyboardInterrupt:
         print("\n\nFinalizado.")

@@ -32,16 +32,41 @@ class PrintScreenAutomator:
         pyautogui.hotkey(*teclas)
         pausa(self.metrica["pausa_padrao"])
 
-    def capturar_area_plotada(self):
+    #def capturar_area_plotada(self):
+    #    self.clicar("fechar_area_plotada")
+    #    pausa(self.metrica["pausa_padrao"])
+    #    self.pressionar(self.atalhos["f6"])
+    #    pausa(self.metrica["pausa_padrao"])
+    #    self.hotkey(*self.atalhos["print_tela"].split("+"))
+    #    pausa(self.metrica["pausa_padrao"])
+    #    self.clicar("clicar_janela_print")
+    #    pausa(self.metrica["pausa_padrao"])
+    #    self.clicar("notificacao_print")
+    #    pausa(self.metrica["pausa_padrao"])
+    #    self.hotkey(*self.atalhos["salvar"].split("+"))
+
+    def capturar_area_plotada(self, nome):        
+        # 1. Fecha a área plotada anterior, se estiver aberta
         self.clicar("fechar_area_plotada")
+        pausa(self.metrica["pausa_padrao"])        
+        
+        # 2. Pressiona F6 para abrir a nova visualização
         self.pressionar(self.atalhos["f6"])
-        self.hotkey(*self.atalhos["print_tela"].split("+"))
-        pausa(1.5)
-        self.clicar("clicar_janela_print")
-        pausa(1.0)
-        self.clicar("notificacao_print")
-        pausa(1.0)
-        self.hotkey(*self.atalhos["salvar"].split("+"))
+        
+        # 3. Espera a tela do F6 carregar completamente
+        pausa(self.metrica["pausa_dialogo"]) 
+        
+        # 4. Tira o screenshot
+        nome_arquivo = f"{nome}.png"
+        caminho = os.path.join(self.pasta_calculos, nome_arquivo)
+        pyautogui.screenshot(caminho)
+        pausa(self.metrica["pausa_padrao"])
+        
+        # 5. Cancela/fecha a tela do F6
+        self.clicar("cancelar")
+        pausa(self.metrica["pausa_padrao"])
+
+
 
     def salvar_print(self, nome):
         self.digitar(nome)

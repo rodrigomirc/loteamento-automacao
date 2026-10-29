@@ -1,4 +1,5 @@
 import os
+import time
 
 import pandas as pd
 
@@ -35,8 +36,8 @@ def processar_linha(dados, dimensor, google_earth, print_screen):
     google_earth.minimizar()
 
     # Captura de tela
-    print_screen.capturar_area_plotada()
-    print_screen.salvar_print(nome)
+    print_screen.capturar_area_plotada(nome)
+    #print_screen.salvar_print(nome)
 
     # Salvar projeto final
     dimensor.conectar()
@@ -63,7 +64,10 @@ def main():
             processar_linha(linha, dimensor, google_earth, print_screen)
         except Exception as e:
             print(f"  Erro ao processar {linha.get('Nome', 'desconhecido')}: {e}")
-
+        
+        # Pausa entre lotes para garantir que o Dimensor ficou livre
+        print("Aguardando 3 segundos antes do próximo lote...")
+        time.sleep(3.0)
 
 if __name__ == "__main__":
     main()

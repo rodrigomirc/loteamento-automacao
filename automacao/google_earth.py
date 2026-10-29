@@ -29,7 +29,7 @@ class GoogleEarthAutomator:
 
     def salvar_kml(self, nome, endereco):
         self.clicar("salvar_kml")
-        pausa(self.metrica["pausa_padrao"])
+        pausa(self.metrica.get("pausa_apos_ok3", 3.0))
         self.clicar("salvar_kml_botao")
         pausa(self.metrica["pausa_padrao"])
         self.digitar(nome)
@@ -43,3 +43,4 @@ class GoogleEarthAutomator:
 
     def minimizar(self):
         self.clicar("minimizar_google_earth")
+        pausa(self.metrica["pausa_padrao"])

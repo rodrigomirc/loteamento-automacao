@@ -11,21 +11,22 @@ caminhos:
   pasta_logs: "logs"
 
 metrica_dimensor:
-  titulo_regex: ".*Metrica DIMENSOR.*"
+  titulo_regex: ".*Métrica DIMENSOR.*"
   maximizado: true
   # Tempo de espera entre acoes (segundos)
   pausa_padrao: 1.0
   pausa_dialogo: 2.0
+  pausa_apos_ok2: 5.0
+  pausa_apos_ok3: 3.0
 
 coordenadas:
-  # ATENCAO: tres coordenadas abaixo precisam de verificacao
-  novo: [38, 104]              # ajustar se necessario
+  novo: [38, 104]
   avancar_1: [1011, 592]
   importar_documentos: [566, 515]
-  avancar_2: [866, 614]        # ajustar se necessario
+  avancar_2: [866, 580]
   avancar_3: [1141, 611]
-  memo_em_branco: [586, 238]
-  botao_nao: [867, 522]
+  memo_em_branco: [586, 240]
+  #botao_nao: [867, 522]
   area_descricao: [697, 495]
   processar: [1177, 159]
   ok_1: [638, 742]
@@ -34,17 +35,12 @@ coordenadas:
   sim_1: [777, 520]
   ok_3: [678, 526]
   salvar_kml: [526, 175]
-  salvar_kml_botao: [549, 249]
+  salvar_kml_botao: [546, 250]
   campo_pasta_kml: [1120, 104]
   salvar_confirmacao: [1270, 701]
   sim_2: [791, 509]
-  minimizar_google_earth: [1322, 914]
+  minimizar_google_earth: [1322, 12]
   fechar_area_plotada: [1206, 93]
-  clicar_janela_print: [713, 387]
-  notificacao_print: [1248, 605]
-  campo_endereco_print: [855, 93]
-  salvar_print: [998, 655]      # ajustar se necessario
-  fechar_captura_print: [1371, 15]
   cancelar: [639, 607]
   salvar_projeto: [331, 93]
   campo_endereco_projeto: [1126, 109]
@@ -57,4 +53,4 @@ atalhos:
   salvar: "ctrl+s"
   enter: "enter"
 
-pasta_calculos_fechamento: "\\\\192.168.1.1\\Rede Cartorio\\5 Registro\\Plotagem\\DIMENSOR - BEM TOPOGRAFIA\\REURB - CARMELITA ARRIEIRO\\Calculos de Fechamento"
+pasta_calculos_fechamento: '\\192.168.1.1\Rede Cartorio\5 Registro\Plotagem\DIMENSOR - BEM TOPOGRAFIA\REURB - CARMELITA ARRIEIRO\Cálculos de Fechamento'
