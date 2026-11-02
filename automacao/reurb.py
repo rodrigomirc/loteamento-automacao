@@ -30,7 +30,7 @@ class ReurbAutomator(DimensorAutomator):
         self.janela.set_focus()
         if self.metrica["maximizado"]:
             self.janela.maximize()
-        pausa(self.metrica["pausa_padrao"])
+        pausa(self.metrica["pausa_apos_ok3"])
 
     def fechar_programa(self):
         try:
