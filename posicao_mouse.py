@@ -2,7 +2,6 @@ import time
 import ctypes
 from ctypes import wintypes
 
-
 def main():
     print("Mova o mouse para o local desejado.")
     print("Pressione Ctrl+C para parar.")
@@ -21,3 +20,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Melhor usar está opção: python -m mouseinfo
