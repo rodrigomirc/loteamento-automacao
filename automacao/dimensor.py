@@ -67,11 +67,11 @@ class DimensorAutomator:
 
     def processar(self):
         self.clicar("processar")
-        pausa(self.metrica.get("pausa_apos_ok2", 5.0))
+        pausa(self.metrica.get("pausa_apos_ok2", 8.0))
         self.clicar("ok_1")
         pausa(self.metrica["pausa_dialogo"])
         self.clicar("ok_2")
-        pausa(self.metrica.get("pausa_apos_ok2", 5.0))
+        pausa(self.metrica.get("pausa_apos_ok2", 8.0))
 
     def exportar_google_earth(self):
         self.clicar("google")
@@ -79,4 +79,4 @@ class DimensorAutomator:
         self.clicar("sim_1")
         pausa(self.metrica["pausa_dialogo"])
         self.clicar("ok_3")
-        pausa(self.metrica["pausa_dialogo"])
+        pausa(self.metrica.get("pausa_apos_ok3", 5.0))

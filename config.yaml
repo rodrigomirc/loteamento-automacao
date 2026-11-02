@@ -16,8 +16,8 @@ metrica_dimensor:
   # Tempo de espera entre acoes (segundos)
   pausa_padrao: 1.0
   pausa_dialogo: 2.0
-  pausa_apos_ok2: 5.0
-  pausa_apos_ok3: 3.0
+  pausa_apos_ok2: 8.0
+  pausa_apos_ok3: 5.0
 
 coordenadas:
   novo: [38, 104]

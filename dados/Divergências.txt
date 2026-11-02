@@ -1,11 +1,11 @@
-Não localizei:
+Não localizei no memorial:
 QUADRA 04 - LOTE 18
 QUADRA 13 - LOTE 34
 
-Lote duplicado:
+Lote duplicado no memorial:
 QUADRA 13 - LOTE 17
 
-Lote quadruplicado:
+Lote quadruplicado no memorial:
 QUADRA 13 - LOTE 17A
 
 
