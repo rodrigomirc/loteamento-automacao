@@ -44,7 +44,7 @@ class ReurbAutomator(DimensorAutomator):
             pausa(self.metrica["pausa_fechar"])
 
     def selecionar_camada_reurb(self):
-        pausa(self.metrica["pausa_apos_ok3"])
+        pausa(self.metrica["pausa_dialogo"])
         self.clicar("botao_sig")
         pausa(self.metrica["pausa_sig"])
         self.clicar("escolher_camada")
