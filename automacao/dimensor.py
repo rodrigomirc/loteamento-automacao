@@ -67,7 +67,7 @@ class DimensorAutomator:
 
     def processar(self):
         self.clicar("processar")
-        pausa(self.metrica["pausa_dialogo"])
+        pausa(self.metrica.get("pausa_apos_ok2", 5.0))
         self.clicar("ok_1")
         pausa(self.metrica["pausa_dialogo"])
         self.clicar("ok_2")
