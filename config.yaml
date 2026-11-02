@@ -18,6 +18,10 @@ metrica_dimensor:
   pausa_dialogo: 2.0
   pausa_apos_ok2: 8.0
   pausa_apos_ok3: 5.0
+  pausa_abrir_dms: 10.0
+  pausa_fechar: 5.0
+  pausa_entre_arquivos: 5.0
+  pausa_sig: 40.0
 
 coordenadas:
   novo: [38, 104]
@@ -45,6 +49,23 @@ coordenadas:
   salvar_projeto: [331, 93]
   campo_endereco_projeto: [1126, 109]
   salvar_projeto_final: [1269, 699]
+
+  # --- SIG ---
+  botao_abrir: [100, 90]
+  barra_endereco_abrir: [500, 667]
+  botao_sig: [240, 712]
+  escolher_camada: [680, 430]
+  opcao_reurb: [680, 610]
+  ok_camada: [630, 475]
+  sim_camada_1: [780, 510]
+  sim_camada_2: [755, 510]
+  cadastrar: [1080, 310]
+  campo_matricula: [520, 185]
+  campo_nome_imovel: [820, 338]
+  salvar_cadastro: [810 ,750]
+  ok_cadastro: [800, 510]
+  vincular: [1080, 525]
+  fechar_sig: [1420, 10]
 
 atalhos:
   tab: "tab"

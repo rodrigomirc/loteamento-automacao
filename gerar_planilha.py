@@ -14,6 +14,7 @@ def criar_planilha_modelo(caminho="dados/loteamentos.xlsx"):
             "Nome": "Exemplo Loteamento",
             "Descricao": "Descricao completa do imovel/loteamento.",
             "Endereco": "C:\\Loteamentos\\Exemplo",
+            "ID": "001",
         }
     ]
 
